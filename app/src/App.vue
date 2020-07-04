@@ -18,9 +18,7 @@ export default {
   },
   data() {
     return {
-      todos: [
-
-      ]
+      todos: []
     }
   },
   methods: {
@@ -29,7 +27,11 @@ export default {
     },
     addTodo (newTodo) {
       this.todos = [...this.todos, newTodo]
-    }
+    },
+
+  },
+  created() {
+    
   }
 }
 </script>
